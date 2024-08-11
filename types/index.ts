@@ -6,7 +6,7 @@ import { IImage } from "@/lib/database/models/image.model";
 export type CreateUserParams = {
   clerkId: string;
   email: string;
-  username: string;
+  username: string | null;
   firstName: string;
   lastName: string;
   photo: string;
