@@ -23,12 +23,12 @@ export type UpdateUserParams = {
 export type AddImageParams = {
   image: {
     title: string;
-    publicId: string;
-    transformationType: string;
-    width: number;
-    height: number;
+    publicId?: string;
+    transformationType: TransformationTypeKey;
+    width?: number;
+    height?: number;
     config: any;
-    secureURL: string;
+    secureUrl?: string;
     transformationURL: string;
     aspectRatio: string | undefined;
     prompt: string | undefined;
